@@ -1,6 +1,6 @@
 {
-  "name": "MedHR Trips",
-  "short_name": "Trips",
+  "name": "Аяллын мэдээлэл",
+  "short_name": "Аялал",
   "description": "Байгууллагын аяллын мэдээлэл",
   "start_url": "/",
   "display": "standalone",

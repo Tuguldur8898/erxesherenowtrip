@@ -164,7 +164,7 @@ export default function AdminPage() {
         <div className="mb-6 flex flex-col gap-3 sm:mb-8 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <Link href="/" className="text-sm text-indigo-600 hover:underline">← Нүүр хуудас</Link>
-            <h1 className="text-xl font-bold text-slate-900 sm:text-2xl">Админ — Аяллын удирдлага</h1>
+            <h1 className="text-xl font-bold text-slate-900 sm:text-2xl">Админ — Аяллын мэдээлэл</h1>
           </div>
           <button
             onClick={() => setShowForm(!showForm)}

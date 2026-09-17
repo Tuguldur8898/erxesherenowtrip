@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MedHR Trips - Аяллын мэдээлэл",
+  title: "Аяллын мэдээлэл",
   description: "Байгууллагын аялал, зугаалгын мэдээлэл, багийн хуваарь, хуваарь",
   manifest: "/manifest.json",
   appleWebApp: {
-    title: "MedHR Trips",
+    title: "Аяллын мэдээлэл",
     statusBarStyle: "default",
   },
 };
