@@ -1,13 +1,11 @@
-import { getDb } from '@/lib/db';
+import { getTripById } from '@/lib/db';
 import { TripView } from '../../_components/TripView';
 
 export const dynamic = 'force-dynamic';
 
 export default async function TripPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const db = getDb();
-
-  const trip = db.prepare('SELECT * FROM trips WHERE id = ?').get(id) as any;
+  const trip = getTripById(id);
 
   if (!trip) {
     return (
@@ -18,15 +16,5 @@ export default async function TripPage({ params }: { params: Promise<{ id: strin
     );
   }
 
-  const schedules = db.prepare('SELECT * FROM schedules WHERE tripId = ? ORDER BY dayNumber, startTime').all(id) as any[];
-  const teamsRaw = db.prepare('SELECT * FROM teams WHERE tripId = ?').all(id) as any[];
-  const accommodations = db.prepare('SELECT * FROM accommodations WHERE tripId = ?').all(id) as any[];
-
-  const teams = [];
-  for (const t of teamsRaw) {
-    const members = db.prepare('SELECT * FROM team_members WHERE teamId = ?').all(t.id) as any[];
-    teams.push({ ...t, members });
-  }
-
-  return <TripView trip={{ ...trip, schedules, teams, accommodations }} />;
+  return <TripView trip={trip} />;
 }

@@ -1,0 +1,161 @@
+[
+  {
+    "id": "trip-001",
+    "name": "Зуны зугаалга 2026",
+    "location": "Тэрэлж",
+    "startDate": "2026-07-15",
+    "endDate": "2026-07-16",
+    "departureLocation": "Эмнэлгийн урд талбай",
+    "departureTime": "08:00",
+    "description": "Байгууллагын жилийн зугаалга. Бүх ажилтан цагтаа ирээрэй.",
+    "schedules": [
+      {
+        "id": "s1",
+        "tripId": "trip-001",
+        "dayNumber": 1,
+        "startTime": "08:00",
+        "endTime": "10:00",
+        "activity": "Хөдлөх",
+        "location": "Эмнэлгээс Тэрэлж",
+        "notes": "Бүх баг цуглах"
+      },
+      {
+        "id": "s2",
+        "tripId": "trip-001",
+        "dayNumber": 1,
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "activity": "Байрлах газар очих, өрөө хуваарилах",
+        "location": "Зугаалгын бааз",
+        "notes": null
+      },
+      {
+        "id": "s3",
+        "tripId": "trip-001",
+        "dayNumber": 1,
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "activity": "Хоол",
+        "location": "Зугаалгын газар",
+        "notes": null
+      },
+      {
+        "id": "s4",
+        "tripId": "trip-001",
+        "dayNumber": 1,
+        "startTime": "14:00",
+        "endTime": "18:00",
+        "activity": "Багийн тоглоом, уралдаан",
+        "location": "Талбай",
+        "notes": null
+      },
+      {
+        "id": "s5",
+        "tripId": "trip-001",
+        "dayNumber": 1,
+        "startTime": "19:00",
+        "endTime": "22:00",
+        "activity": "Хөгжмийн орой",
+        "location": "Байрлах газар",
+        "notes": null
+      },
+      {
+        "id": "s6",
+        "tripId": "trip-001",
+        "dayNumber": 2,
+        "startTime": "08:00",
+        "endTime": "09:00",
+        "activity": " Өглөөний дасгал, агаарын өргөлт",
+        "location": "Байрлах газар",
+        "notes": null
+      },
+      {
+        "id": "s7",
+        "tripId": "trip-001",
+        "dayNumber": 2,
+        "startTime": "09:00",
+        "endTime": "10:00",
+        "activity": "Хоол",
+        "location": "Зугаалгын газар",
+        "notes": null
+      },
+      {
+        "id": "s8",
+        "tripId": "trip-001",
+        "dayNumber": 2,
+        "startTime": "10:00",
+        "endTime": "12:00",
+        "activity": "Чөлөөт цаг, аялал",
+        "location": "Тэрэлж",
+        "notes": null
+      },
+      {
+        "id": "s9",
+        "tripId": "trip-001",
+        "dayNumber": 2,
+        "startTime": "12:00",
+        "endTime": "13:00",
+        "activity": "Хоол",
+        "location": "Зугаалгын газар",
+        "notes": null
+      },
+      {
+        "id": "s10",
+        "tripId": "trip-001",
+        "dayNumber": 2,
+        "startTime": "13:00",
+        "endTime": "15:00",
+        "activity": "Буцах",
+        "location": "Эмнэлэг",
+        "notes": null
+      }
+    ],
+    "teams": [
+      {
+        "id": "t1",
+        "tripId": "trip-001",
+        "name": "Баг 1",
+        "leader": "Бат",
+        "members": [
+          { "id": "m1", "teamId": "t1", "name": "Болд", "phone": "99119911" },
+          { "id": "m2", "teamId": "t1", "name": "Сараа", "phone": "99229922" },
+          { "id": "m3", "teamId": "t1", "name": "Дорж", "phone": "99339933" }
+        ]
+      },
+      {
+        "id": "t2",
+        "tripId": "trip-001",
+        "name": "Баг 2",
+        "leader": "Оюу",
+        "members": [
+          { "id": "m4", "teamId": "t2", "name": "Энх", "phone": "99449944" },
+          { "id": "m5", "teamId": "t2", "name": "Гэрэл", "phone": "99559955" },
+          { "id": "m6", "teamId": "t2", "name": "Мөнх", "phone": "99669966" }
+        ]
+      }
+    ],
+    "accommodations": [
+      {
+        "id": "a1",
+        "tripId": "trip-001",
+        "roomName": "Өрөө 101",
+        "members": "Болд, Сараа",
+        "notes": "2 ортой"
+      },
+      {
+        "id": "a2",
+        "tripId": "trip-001",
+        "roomName": "Өрөө 102",
+        "members": "Дорж, Энх",
+        "notes": "2 ортой"
+      },
+      {
+        "id": "a3",
+        "tripId": "trip-001",
+        "roomName": "Өрөө 103",
+        "members": "Оюу, Гэрэл, Мөнх",
+        "notes": "3 ортой"
+      }
+    ]
+  }
+]
